@@ -1,49 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>{{ page.title }}</title>
+  {% include head.html %}
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	</head>
+  <body>
 
-	<body>
-		<header>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-xs-3">
-						<a href="/">
-	            <div class="logo-wrapper">
-								<img src="/images/logo_100.png" alt="Code for ABQ">
-							</div>
-						</a>
-					</div>
-						<div class="col-md-9 col-xs-9">
-							<nav id="main-menu-top">
-								<ul id="menu-res" class="main-menu">
-									<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#get-involved">Get Involved!</a></li>
-									<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#about">About</a></li>
-									<li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#contact">Contact</a></li>
-									<li id="menu-item-81" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a href="https://secure.codeforamerica.org/page/contribute/?brigade=Code%20for%20ABQ">Donate</a></li>
-								</ul>
-							</nav>
-							<nav class="menu-responsive">
-								<div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
-									<ul	class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#get-involved" role="menuitem" tabindex="-1">Get Involved!</a></li>
-										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#about" role="menuitem" tabindex="-1">About</a></li>
-										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#contact" role="menuitem" tabindex="-1">Contact</a></li>
-										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a href="https://secure.codeforamerica.org/page/contribute/?brigade=Code%20for%20ABQ" role="menuitem" tabindex="-1">Donate</a></li>
-									</ul>
-								</div>
-							</nav>
-						</div>
-				</div>
-			</div>
-		</header>
+    {% include header.html %}
+
 		{{ content }}
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    {% include footer.html %}
+
 	</body>
 </html>
+
+
+
+
+
+
