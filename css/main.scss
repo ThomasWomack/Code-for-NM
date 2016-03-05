@@ -43,6 +43,24 @@ $on-laptop:        800px;
     }
 }
 
+body {
+  padding-top: 80px;
+}
+
+.navbar-fixed-top {
+  background-color: white;
+  border-width: 0px;
+}
+
+.navbar-nav {
+  li {
+    a {
+        &:hover {
+          border-bottom: 3px solid black;
+        }
+    }
+  }
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
