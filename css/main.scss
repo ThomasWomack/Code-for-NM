@@ -3,18 +3,12 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Lato", Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -25,13 +19,12 @@ $white: #fafafa;
 $brand-red: #ad655c;
 $brand-red-alt: #ca968c;
 $brand-grey: #4f4f4f;
+
 // Width of the content area
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -40,6 +33,7 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -48,33 +42,50 @@ $on-laptop:        800px;
 
 body {
   padding-top: 80px;
-  font-family: 'Lato', sans-serif;
+  font-family: $base-font-family;
 }
 
-.headtron {
+.slab {
+  padding: 100px 0px;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  h1:after, h2:after {
+      width: 35px;
+      height: 4px;
+      margin: 20px auto;
+      display: block;
+      background-color: black;
+      content: "";
+  }
+
+  &.inverted {
+    color: $white;
+
+    h1:after, h2:after {
+      background-color: $white;
+    }
+  }
+}
+
+#branding {
   background-color: $brand-red;
-  color: $white;
-  padding: 100px 0px;
-  text-align: center;
 }
 
-.abouttron {
+#about {
   background-color: $brand-grey;
-  color: $white;
-  padding: 100px 0px;
-  text-align: center;
 }
 
-.partnertron {
+#how-we-work {
   background-color: $brand-red-alt;
-  color: $white;
-  padding: 100px 0px;
-  text-align: center;
 }
 
 .navbar-fixed-top {
   background-color: $white;
-  border: 1px solid #bdc3c7;
 }
 
 .navbar-nav {
@@ -91,8 +102,13 @@ body {
   background-color: $brand-red;
 }
 
+.service-wrapper {
+  padding: 30px 0 60px;
+  text-align: center;
+}
 .team-wrapper {
   text-align: center;
+  padding-top: 30px;
 
   img {
     border-radius: 50%;
@@ -117,8 +133,6 @@ body {
   }
   .team-social {
     ul {
-      padding-left: 0;
-      list-style-type: none;
       font-size: 2em;
       li {
         display: inline;
@@ -130,7 +144,7 @@ body {
 .icon {
   i {
     font-size: 20px;
-    border: 2px solid #000;
+    border: 2px solid black;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -140,7 +154,11 @@ body {
   }
 }
 
-.site-footer {
+.inverted .icon i {
+    border-color: $white;
+}
+
+#site-footer {
   background-color: $grey-color-light;
   padding: 100px 0px 20px;
 
@@ -149,24 +167,6 @@ body {
   }
 }
 
-.line-title {
-  width: 35px;
-  height: 4px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 20px;
-  background-color: $white;
-
-  &.inverted {
-    background-color: $grey-color-dark;
-  }
-}
-
-.section-heading-wrapper {
-  .title {
-    text-align:center;
-  }
-}
 // Import partials from `sass_dir` (defaults to `_sass`)
 // @import
 //        "base",
