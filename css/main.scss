@@ -14,14 +14,17 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$white: #fafafa;
+
+$brand-red: #ad655c;
+$brand-red-alt: #ca968c;
+$brand-grey: #4f4f4f;
 // Width of the content area
 $content-width:    800px;
 
@@ -45,11 +48,33 @@ $on-laptop:        800px;
 
 body {
   padding-top: 80px;
+  font-family: 'Lato', sans-serif;
+}
+
+.headtron {
+  background-color: $brand-red;
+  color: $white;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+.abouttron {
+  background-color: $brand-grey;
+  color: $white;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+.partnertron {
+  background-color: $brand-red-alt;
+  color: $white;
+  padding: 100px 0px;
+  text-align: center;
 }
 
 .navbar-fixed-top {
-  background-color: white;
-  border-width: 0px;
+  background-color: $white;
+  border: 1px solid #bdc3c7;
 }
 
 .navbar-nav {
@@ -69,6 +94,16 @@ body {
     border-radius: 50%;
     display: block;
     margin: auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  a {
+    color: $white;
+    &:hover
+    {
+      color: $brand-red;
+    }
   }
 
   h3.team-name {
@@ -88,6 +123,46 @@ body {
   }
 }
 
+.icon {
+  i {
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+.site-footer {
+  background-color: $grey-color-light;
+  padding: 100px 0px 20px;
+
+  a{
+    color: $grey-color-dark;
+  }
+}
+
+.line-title {
+  width: 35px;
+  height: 4px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  background-color: $white;
+
+  &.inverted {
+    background-color: $grey-color-dark;
+  }
+}
+
+.section-heading-wrapper {
+  .title {
+    text-align:center;
+  }
+}
 // Import partials from `sass_dir` (defaults to `_sass`)
 // @import
 //        "base",
