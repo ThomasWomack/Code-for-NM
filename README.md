@@ -14,3 +14,8 @@ Ruby. That's it.
 1. Run `gem install jekyll` to install it
 2. Clone this repository and `cd` to its root directory
 3. Run `jekyll serve` and browse to http://127.0.0.1:4000 or http://localhost:4000 . Note that you must run `jekyll serve` from the site's root directory. As long as you leave that jekyll server running, you can make edits to the source and the static pages will be regenerated on the fly.
+
+### Contributors
+@BradWeikel
+@SmallMelo
+Evan King
