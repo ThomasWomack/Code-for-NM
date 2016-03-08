@@ -19,6 +19,6 @@ Ruby. That's it.
 If you use Windows and don't already have a full Unix-style shell (such as Cygwin) installed and configured, you can get up and running very quickly using the [Cloud9](http://c9.io) cloud development environment. Create a "Custom" workspace, connect it to the github repo, change to the `gh-pages` branch, and run  `jekyll serve --host $IP --port $PORT --baseurl ''`.
  
 ## Contributors
-@BradWeikel
-@SmallMelo
-Evan King
++ [BradWeikel](http://github.com/bradweikel)
++ [SmallMelo](http://github.com/smallmelo)
++ Evan King
