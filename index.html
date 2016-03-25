@@ -64,57 +64,32 @@ title: Code for ABQ
 			<div class="col-md-12">
 				<h2>Meet Our Volunteer Leaders</h2>
 			</div>
-			<div class="col-md-3">
-				<div class="team-wrapper">
-					<img src="/images/smallmelo.jpg" alt="Melo, Code for ABQ Captain">
-					<h3 class="team-name">Melo</h3>
-					<span class="position">Captain</span>
-					<div class="social-share team-social">
-						<ul class="social">
-							<li><a target="_blank" href="https://twitter.com/smallmelo"><i class="fa fa-twitter"></i></a></li>
-							<li><a target="_blank" href="https://github.com/smallmelo"><i class="fa fa-github"></i></a></li>
-						</ul>
+
+			{% for officer in site.officers %}
+		 		{% assign person = site.people[officer] %}
+
+				<div class="col-md-3">
+					<div class="team-wrapper">
+						<img src="{{ person.avatar }}" alt="{{ person.display_name }}, {{ person.title }}">
+						<h3 class="team-name">{{ person.display_name }}</h3>
+						<span class="position">{{ person.title }}</span>
+						<div class="social-share team-social">
+							<ul class="social">
+
+								{% if person.twitter != nil %}
+									<li><a target="_blank" href="https://twitter.com/{{ person.twitter }}"><i class="fa fa-twitter"></i></a></li>
+								{% endif %}
+
+								{% if person.github != nil %}
+									<li><a target="_blank" href="https://github.com/{{ person.github }}"><i class="fa fa-github"></i></a></li>
+								{% endif %}
+
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team-wrapper">
-					<img src="/images/zachJWgrant.jpg" alt="Zach, Code for ABQ Community Organizer">
-					<h3 class="team-name">Zach</h3>
-					<span class="position">Community Organizer</span>
-					<div class="social-share team-social">
-						<ul class="social">
-							<li><a target="_blank" href="https://twitter.com/zachJWgrant"><i class="fa fa-twitter"></i></a></li>
-							<li><a target="_blank" href="https://github.com/zachgrant2000"><i class="fa fa-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team-wrapper">
-					<img src="/images/bradweikel.png" alt="Brad, Code for ABQ Delivery Lead">
-					<h3 class="team-name">Brad</h3>
-					<span class="position">Delivery Lead</span>
-					<div class="social-share team-social">
-						<ul class="social">
-							<li><a target="_blank" href="https://twitter.com/bradweikel"><i class="fa fa-twitter"></i></a></li>
-							<li><a target="_blank" href="https://github.com/bradweikel"><i class="fa fa-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team-wrapper">
-					<img src="/images/emphalpin.jpg" alt="Lizzie, Code for ABQ Storyteller">
-					<h3 class="team-name">Lizzie</h3>
-					<span class="position">Storyteller</span>
-					<div class="social-share team-social">
-						<ul class="social">
-							<li><a target="_blank" href="https://twitter.com/emphalpin"><i class="fa fa-twitter"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			{% endfor %}
+
 		</div>
 	</div>
 </section>

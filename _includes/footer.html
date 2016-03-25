@@ -6,7 +6,12 @@
           <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><i class="fa fa-creative-commons"></i></a> Unless otherwise noted, all content on this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
         </p>
         <p>
-          Site Contributors: Melo King, Brad Weikel, Evan King
+          Site Contributors:
+
+          {% for contributor in site.contributors %}
+            {% assign person = site.people[contributor] %}
+            {% if person.github == nil %}{{ person.display_name }}{% else %}<a target="_blank" href="https://github.com/{{ person.github }}">{{ person.display_name }}</a>{% endif %}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
         </p>
       </div>
     </div>
