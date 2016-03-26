@@ -30,3 +30,7 @@ people:
 
 officers: [melo, zach, brad, lizzie]
 contributors: [brad, melo, evan]
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
