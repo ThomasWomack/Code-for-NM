@@ -12,11 +12,17 @@
     		<div class="row">
 
           {% assign author = site.people[page.author] %}
+          {% assign author_url = author %}
+
+          {% if author.github != nil %}
+            {% capture author_url %}<a target="_blank" href="https://github.com/{{author.github}}">{{author.display_name}}</a>{% endcapture %}
+          {% endif %}
+
 
           <div class="col-md-12">
             <div class="section-heading-wrapper ">
               <h2 class="title">{{ page.title }}</h2>
-              Posted {{ page.date | date: '%B %d, %Y' }} by {{ author.display_name | default: page.author | default: "anonymous"}}
+              Posted {{ page.date | date: '%B %d, %Y' }} by {{ author_url | default: page.author | default: "anonymous"}}
             </div>
             {{ content }}
           </div>
