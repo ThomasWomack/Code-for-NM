@@ -23,4 +23,4 @@ The Code for ABQ community expects that network activities, events, and digital 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please tell us about it using the [Code for ABQ Harassment Reporter](https://codeforabq.typeform.com/to/Uiirlb) or by email us at [safespace@codeforabq.org](mailto:safespace@codeforabq.org).  We reserve the right to ask anyone in violation of these policies not to participate in Code for ABQ network activities, events, and digital forums.
 
 <sup>1</sup> Code for ABQ Partner, agree to abide by the same Code of Conduct at co-hosted network activities, events, and digital forums.  
-<sup>2</sup> Please see our [Anti-Harassrment Policy](/policies/anti-harassment-policy.md) for a better understanding of what harassment means to us.
+<sup>2</sup> Please see our [Anti-Harassrment Policy](/policies/anti-harassment.html) for a better understanding of what harassment means to us.
