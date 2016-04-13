@@ -1,9 +1,9 @@
 ---
 layout: wrapped
-title: Anti-Harassment Policy
+title: Code for ABQ's Anti-Harassment Policy
 ---
 
-#Code for ABQ's Anti-Harassment Policy#
+# Code for ABQ's Anti-Harassment Policy #
 
 This anti-harassment policy is based on the [example policy](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy) from the Geek Feminism wiki, created by the Ada Initiative and other volunteers.
 
