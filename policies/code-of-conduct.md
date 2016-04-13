@@ -1,3 +1,8 @@
+---
+layout: default
+title: Code for ABQ
+---
+
 # Code for ABQ's Code of Conduct
 
 The Code for ABQ community expects that network activities, events, and digital forums, that are managed by Code for ABQ or co-hosted with a partner organization<sup>1</sup>:
