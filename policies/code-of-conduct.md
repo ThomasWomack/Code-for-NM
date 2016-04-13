@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wrapped
 title: Code for ABQ
 ---
 
