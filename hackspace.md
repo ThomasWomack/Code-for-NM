@@ -3,6 +3,8 @@ layout: wrapped
 title: Hackspace @ National Day of Civic Hacking, 2016
 ---
 
+![National Day of Civic Hacking](/images/ndoch2016.png "National Day of Civic Hacking")
+
 # Welcome!
 Welcome to the hackspace for Albuqeurque's National Day of Civic Hacking Event. We only have a few hours, so please speed-read this page, decide what you want to work on, and dive right in. We highly recommend partnering with at least one other person. If your project involves tech you're not familiar with, you might try pair-programming with a partner on a single computer. If you need help deciding where to start or with anything else, ask Brad!
 
