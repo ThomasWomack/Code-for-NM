@@ -51,3 +51,4 @@ We've proposed a variety of different projects below, to appeal to different ski
 
 1. **Open Budget ABQ** - Code for ABQ has been working on an open budget application, and we could benefit from a design treatment. Ask Brad for help getting started on this.
 2. **National Challenges** - Some of the [National Challenges](https://www.codeforamerica.org/events/national-day-2016) mentioned above are as much about data visualization as technology. The EPA's waste visualization challenge, for example. Take a look and see if any of those challenges speak to you.
+3. **Local Infographics** - Tell the story behind [a city dataset](https://www.cabq.gov/abq-data/) by creating an infographic.
