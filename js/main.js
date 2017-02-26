@@ -5,8 +5,9 @@ $(document).ready(function() {
 		var getInvolved = $('#get-involved');
 		var about = $('#about');
 		var partners = $('#partners');
+		//var howWeWork = $('#how-we-work');
 		var contact = $('#contact');
-		var list = [branding, getInvolved, about, partners, contact];
+		var list = [branding, getInvolved, about, partners, /* howWeWork, */ contact];
 		var scrollCheck = -10;
 		$(window).scroll(function() {
 			var scroll = $(document).scrollTop();
@@ -27,37 +28,15 @@ $(document).ready(function() {
 		  var target = $(this.hash);
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		  if (target.length) {
-		    if($('body').hasClass('home')) {
-		      var scrollTop = parseInt(target.offset().top) - parseInt($('.site-container:first-child').height());
-		      $('html, body').animate({
-		        scrollTop: scrollTop
-		      }, 500);
-		    } else {
 		      $('html, body').animate({
 		        scrollTop: target.offset().top
 		      }, 500);
-		    }
 		    return false;
 		  }
 		}
 	});
 	
 });
-
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
 
 function getPositionTopAndSort(list, scroll, scrollCheck) {
 	var newList = [];
