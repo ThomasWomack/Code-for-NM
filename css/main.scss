@@ -97,6 +97,9 @@ body {
       font-weight: bold;
       font-size: 16px;
       color: black;
+      &.active {
+        border-bottom: 3px solid $grey-color;
+      }
 
       &:hover, &:active {
         border-bottom: 3px solid $grey-color;
