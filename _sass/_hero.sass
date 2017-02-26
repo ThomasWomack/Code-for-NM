@@ -1,0 +1,23 @@
+@mixin borderRadius($amount)
+  -moz-border-radius: $amount
+  -webkit-border-radius: $amount
+  border-radius: $amount
+
+.hero
+  background: $background-url
+  padding: 100px 0px
+  text-align: left
+
+  .button
+    background-color: red
+    @include borderRadius(10px)
+    border: 0
+    color: white
+    cursor: pointer
+    font-size: 16px
+    font-size: 1.6rem
+    font-weight: 300
+    padding: 16px 24px
+    text-transform: uppercase
+    width: auto
+    margin-top: 20px
