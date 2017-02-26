@@ -44,6 +44,7 @@ $on-laptop:        800px;
 body {
   padding-top: 80px;
   font-family: $base-font-family;
+  background: $background-url;
 }
 
 .slab {
@@ -64,12 +65,11 @@ body {
   }
 }
 
-#branding {
-  background-color: $brand-red;
-}
-
 #about {
-  background-color: $brand-grey;
+  h2 {
+    text-align: center;
+    color: $brand-red
+  }
 }
 
 #how-we-work {
@@ -119,6 +119,7 @@ body {
 .team-wrapper {
   text-align: center;
   padding-top: 30px;
+  color: $grey-color-dark;
 
   img {
     border-radius: 50%;
@@ -129,7 +130,7 @@ body {
   }
 
   a {
-    color: $white;
+    color: $grey-color-dark;
 
     &:hover, &:active
     {
@@ -140,10 +141,13 @@ body {
   h3.team-name {
     margin-top: 0px;
     margin-bottom: 5px;
+    color: $grey-color-dark;
+    font-weight: 600;
   }
   .position {
     display: block;
     margin: 40px 0px;
+    color: $grey-color-dark;
   }
   .team-social {
     ul {
