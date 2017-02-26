@@ -55,15 +55,6 @@ body {
     padding-left: 0;
   }
 
-  h1:after, h2:after {
-      width: 35px;
-      height: 4px;
-      margin: 20px auto;
-      display: block;
-      background-color: black;
-      content: "";
-  }
-
   &.inverted {
     color: $white;
 
@@ -119,15 +110,15 @@ body {
   text-align: center;
 }
 .team-wrapper {
-  text-align: center;
+  text-align: left;
   padding-top: 30px;
 
   img {
     border-radius: 50%;
     display: block;
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
 
   a {
@@ -140,17 +131,27 @@ body {
   }
 
   h3.team-name {
+    margin-top: 0px;
+    margin-bottom: 5px;
   }
   .position {
-    font-style: italic;
+    display: block;
+    margin: 40px 0px;
   }
   .team-social {
     ul {
       font-size: 2em;
       li {
         display: inline;
+        padding-right: 15px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .team-wrapper {
+    text-align: center;
   }
 }
 
