@@ -86,7 +86,7 @@ body {
 }
 
 .navbar-fixed-top {
-  background-color: $white;
+  background: $background-url;
 }
 
 .navbar-nav {
@@ -100,7 +100,7 @@ body {
 
       &:hover, &:active {
         border-bottom: 3px solid $grey-color;
-        background-color: $white;
+        background: $white;
       }
     }
   }
