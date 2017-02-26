@@ -96,7 +96,7 @@ body {
 
       &:hover, &:active {
         border-bottom: 3px solid $grey-color;
-        background: none;
+        background: $white;
       }
     }
   }
@@ -117,15 +117,15 @@ body {
   text-align: center;
 }
 .team-wrapper {
-  text-align: left;
+  text-align: center;
   padding-top: 30px;
 
   img {
     border-radius: 50%;
     display: block;
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 
   a {
@@ -194,5 +194,6 @@ body {
        "footer",
        "hero",
        "get-involved",
-       "buttons"
+       "buttons",
+       "contact"
 ;
