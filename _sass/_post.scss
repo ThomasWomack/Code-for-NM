@@ -1,0 +1,20 @@
+.title {
+	font-weight: 600;
+	margin-bottom: 4%;
+}
+
+.post-author-date {
+	margin-bottom: 4%;
+}
+
+.back-to-blog {
+	position: absolute;
+    left: 5%;
+    top: 31%;
+}
+
+@media screen and (max-width: 1450px) {
+	.back-to-blog {
+		display: none;
+	}
+}
