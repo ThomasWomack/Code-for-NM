@@ -164,6 +164,14 @@ body {
 @media screen and (max-width: 990px) {
   .team-wrapper {
     text-align: center;
+
+    .team-social ul li {
+      padding-right: 0px;
+    }
+  }
+
+  .team-image {
+    margin-bottom: 5%;
   }
 }
 
