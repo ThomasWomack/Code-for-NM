@@ -1,0 +1,16 @@
+.home
+	section
+		position: relative
+		&:nth-of-type(2n)
+			background: rgba(20, 20, 20, .1)
+		&:after
+			position: absolute
+			height: 100%
+			width: 100%
+			top: 0
+			left: 0
+			content: ""
+			background: $background-url
+			background-position: center
+			background-size: cover
+			z-index: -1
