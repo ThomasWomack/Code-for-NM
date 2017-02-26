@@ -1,0 +1,35 @@
+<section id="about" class="slab inverted">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Meet Our Volunteer Leaders</h2>
+			</div>
+
+			{% for officer in site.officers %}
+		 		{% assign person = site.people[officer] %}
+
+				<div class="col-md-3">
+					<div class="team-wrapper">
+						<img src="{{ person.avatar }}" alt="{{ person.display_name }}, {{ person.title }}">
+						<h3 class="team-name">{{ person.display_name }}</h3>
+						<span class="position">{{ person.title }}</span>
+						<div class="social-share team-social">
+							<ul class="social">
+
+								{% if person.twitter != nil %}
+									<li><a target="_blank" href="https://twitter.com/{{ person.twitter }}"><i class="fa fa-twitter"></i></a></li>
+								{% endif %}
+
+								{% if person.github != nil %}
+									<li><a target="_blank" href="https://github.com/{{ person.github }}"><i class="fa fa-github"></i></a></li>
+								{% endif %}
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</section>
