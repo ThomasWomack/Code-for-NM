@@ -1,18 +1,11 @@
 <footer id="site-footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <p>
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><i class="fa fa-creative-commons"></i></a> Unless otherwise noted, all content on this website, including design assets, is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. The source code is <a href="https://github.com/codeforabq/codeforabq.org">available on GitHub</a> and is licensed under the GPLv3.
-        </p>
-        <p>
-          Site Contributors:
-
-          {% for contributor in site.contributors %}
-            {% assign person = site.people[contributor] %}
-            {% if person.github == nil %}{{ person.display_name }}{% else %}<a target="_blank" href="https://github.com/{{ person.github }}">{{ person.display_name }}</a>{% endif %}{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
+      <div class="col-md-6">
+        <p>&copy; 2017 Code for ABQ. All rights reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="/images/code_for_abq_footer_balloon.png" class='footer-ballon'>
       </div>
     </div>
   </div>
@@ -29,6 +22,6 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-66351670-1', 'auto');
+  ga('create', 'UA-92631767-1', 'auto');
   ga('send', 'pageview');
 </script>

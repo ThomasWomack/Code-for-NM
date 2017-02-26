@@ -12,7 +12,7 @@ $base-line-height: 1.5;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  #333;
 $background-url : url(/images/triangle_background.png);
 
 $white: #fafafa;
@@ -185,13 +185,10 @@ body {
 }
 
 #site-footer {
-  background-color: $grey-color-light;
-  padding: 100px 0px 20px;
+  background-color: $grey-color-dark;
+  color: $white;
+  padding: 50px 0px;
   margin-top: 3em;
-
-  a{
-    color: $grey-color-dark;
-  }
 }
 
 @import
