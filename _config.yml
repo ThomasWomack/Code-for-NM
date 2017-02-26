@@ -2,34 +2,23 @@ name: Code for ABQ
 markdown: kramdown
 
 people:
-  brad:
-    display_name: Brad Weikel
-    title: Delivery Lead
-    twitter: bradweikel
-    github: bradweikel
-    avatar: /images/bradweikel.png
-  melo:
-    display_name: Melo King
-    title: Brigade Captain
-    twitter: smallmelo
-    github: smallmelo
-    avatar: /images/smallmelo.jpg
-  zach:
-    display_name: Zach Grant
+  alonso:
+    first_name: Alonso
+    last_name: Indacochea
     title: Community Organizer
-    twitter: zachJWgrant
-    github: zachgrant2000
-    avatar: /images/zachJWgrant.jpg
-  lizzie:
-    display_name: Lizzie Halpin
-    title: Storyteller
-    twitter: emphalpin
-    avatar: /images/emphalpin.jpg
-  evan:
-    display_name: Evan King
+    twitter: Alonso_in
+    github: aindaco1
+    avatar: /images/alonso.png
+  elaine:
+    first_name: Elaine
+    last_name: Thomas
+    title: Community Organizer
+    twitter: ViceroyThomas
+    github: ethomas12
+    avatar: /images/elaine.png
 
-officers: [melo, zach, brad, lizzie]
-contributors: [brad, melo, evan]
+officers: [alonso, elaine]
+contributors: []
 
 gems:
   - jekyll-sitemap
