@@ -8,7 +8,7 @@ $(document).ready(function() {
 		var howWeWork = $('#how-we-work');
 		var contact = $('#contact');
 		var list = [branding, getInvolved, about, partners, howWeWork, contact];
-		var scrollCheck = 80;
+		var scrollCheck = -10;
 		$(window).scroll(function() {
 			var scroll = $(document).scrollTop();
 			var newList = getPositionTopAndSort(list, scroll, scrollCheck);
@@ -21,6 +21,27 @@ $(document).ready(function() {
 			});
 		});
 	}
+
+	// add smooth scrolling on clicked anchors
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+		    if($('body').hasClass('home')) {
+		      var scrollTop = parseInt(target.offset().top) - parseInt($('.site-container:first-child').height());
+		      $('html, body').animate({
+		        scrollTop: scrollTop
+		      }, 500);
+		    } else {
+		      $('html, body').animate({
+		        scrollTop: target.offset().top
+		      }, 500);
+		    }
+		    return false;
+		  }
+		}
+	});
 	
 });
 

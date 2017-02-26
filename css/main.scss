@@ -17,7 +17,7 @@ $background-url : url(/images/triangle_background.png);
 
 $white: #fafafa;
 
-$brand-red: #ad655c;
+$brand-red: #ce3045;
 $brand-red-alt: #ca968c;
 $brand-grey: #4f4f4f;
 
@@ -97,6 +97,7 @@ body {
       font-weight: bold;
       font-size: 16px;
       color: black;
+      transition: all .5 ease-in-out;
       &.active {
         border-bottom: 3px solid $grey-color;
       }
@@ -183,5 +184,6 @@ body {
 @import
        "header",
        "footer",
-       "hero"
+       "hero",
+       "buttons"
 ;
