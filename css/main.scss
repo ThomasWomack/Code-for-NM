@@ -64,12 +64,21 @@ body {
   }
 }
 
-#about {
+.about, .donate {
   h2 {
     text-align: center;
     color: $brand-red;
     margin: 5% 0;
   }
+}
+
+.donate {
+	#buttons {
+		text-align: center;
+		button {
+			display: inline-block;
+		}
+	}
 }
 
 #how-we-work {

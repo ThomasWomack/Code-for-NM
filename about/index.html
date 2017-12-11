@@ -1,0 +1,52 @@
+---
+layout: default
+title: About
+---
+
+<section id="content" class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>About</h1>
+			</div>
+			<h2>Mission Statement</h2>
+
+			<h2>People</h2>
+
+			{% for officer in site.officers %}
+			{% assign person = site.people[officer] %}
+
+			<div class="col-md-6">
+				<div class="team-wrapper">
+					<div class="col-md-6 team-image">
+						<img src="{{ person.avatar }}" alt="{{ person.display_name }}, {{ person.title }}">
+					</div>
+					<div class="col-md-6">
+						<h3 class="team-name">{{ person.first_name }}</h3>
+						<h3 class="team-name">{{ person.last_name }}</h3>
+						<span class="position">{{ person.title }}</span>
+						<div class="social-share team-social">
+							<ul class="social">
+
+								{% if person.twitter != nil %}
+								<li><a target="_blank" href="https://twitter.com/{{ person.twitter }}"><i class="fa fa-twitter"></i></a></li>
+								{% endif %}
+
+								{% if person.github != nil %}
+								<li><a target="_blank" href="https://github.com/{{ person.github }}"><i class="fa fa-github"></i></a></li>
+								{% endif %}
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+			<div class="col-md-12">
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+</section>

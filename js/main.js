@@ -3,11 +3,10 @@ $(document).ready(function() {
 		// set up our scroll variable
 		var branding = $('#branding');
 		var getInvolved = $('#get-involved');
-		var about = $('#about');
 		var partners = $('#partners');
 		var sponsors = $('#sponsors');
 		var contact = $('#contact');
-		var list = [branding, getInvolved, about, partners, sponsors, contact];
+		var list = [branding, getInvolved, partners, sponsors, contact];
 		var scrollCheck = -10;
 		$(window).scroll(function() {
 			var scroll = $(document).scrollTop();
@@ -35,7 +34,7 @@ $(document).ready(function() {
 		  }
 		}
 	});
-	
+
 });
 
 function getPositionTopAndSort(list, scroll, scrollCheck) {
