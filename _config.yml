@@ -6,7 +6,7 @@ people:
     first_name: Alonso
     last_name: Indacochea
     title: Community Organizer
-    twitter: Alonso_in
+    twitter: alonso_in
     github: aindaco1
     avatar: /images/alonso.png
   noel:
@@ -15,9 +15,9 @@ people:
     title: Community Organizer
     twitter: noeldevelops
     github: noeldevelops
-    avatar: /images/noel.png
+    avatar: /images/noel.jpg
 
-officers: [alonso, elaine]
+officers: [alonso, noel]
 contributors: []
 
 gems:
