@@ -9,13 +9,13 @@ people:
     twitter: Alonso_in
     github: aindaco1
     avatar: /images/alonso.png
-  elaine:
-    first_name: Elaine
-    last_name: Thomas
+  noel:
+    first_name: Noel
+    last_name: Cothren
     title: Community Organizer
-    twitter: ViceroyThomas
-    github: ethomas12
-    avatar: /images/elaine.png
+    twitter: noeldevelops
+    github: noeldevelops
+    avatar: /images/noel.png
 
 officers: [alonso, elaine]
 contributors: []
@@ -23,3 +23,6 @@ contributors: []
 gems:
   - jekyll-sitemap
   - jekyll-feed
+
+plugins:
+  - jekyll-redirect-from
