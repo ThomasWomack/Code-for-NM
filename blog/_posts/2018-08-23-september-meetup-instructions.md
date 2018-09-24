@@ -19,10 +19,10 @@ _The site we create will use the following plugins:_
 ## Get Ready!
 1. Download and install [Local by Flywheel](https://local.getflywheel.com/)
 2. Make a new Wordpress install using Local by Flywheel
-3. Head to the local directory of the site you just made, and copy these files into the Public directory: 
+3. Head to the local directory of the site you just made, and copy these files into the **Public** directory: 
     - [installer.php](http://www.mediafire.com/file/r9ba3e5prpld6ei/installer.php/file)
     - [Duplicator binary](http://www.mediafire.com/file/gwtudnrf75mdzsm/20180905_thelandofadvancement_10024014c71324b21547_20180906000152_archive_%281%29.daf/file)
-    - [gitignore](http://www.mediafire.com/file/8xr4xq7ii3fcxk8/gitignore/file) PS add a `.` at the beginning of this file once you place it in the Public directory
+    - [gitignore](http://www.mediafire.com/file/8xr4xq7ii3fcxk8/gitignore/file) (PS add a `.` at the beginning of this file once you place it in the Public directory)
 4. Navigate to the installer from your browser (something like code4lms.local/installer.php), ignore the not private warning and proceed
 
 **On the night of the meetup, we will work together on the following tasks for our Learning Site:**
