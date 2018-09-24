@@ -22,7 +22,7 @@ _The site we create will use the following plugins:_
 3. Navigate to file Local by Flywheel Directory, to the site you just made, and copy these 2 files into the Public directory: 
 4. Navigate to the installer from your browser (something like code4lms.local/installer.php), ignore the not private warning and proceed
 
-**On the night of the meetup, we will work in up to 3 teams to work on the following tasks for our Learning Site:**
+**On the night of the meetup, we will work together on the following tasks for our Learning Site:**
 1. Create a new course to teach our learners a skill
 2. Build a directory of people and institutions to know in the NM Tech Scene
 3. Build a glossary of terms new developers must learn
